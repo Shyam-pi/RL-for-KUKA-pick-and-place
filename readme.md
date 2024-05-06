@@ -1,6 +1,6 @@
 ***REINFORCEMENT LEARNING BASED KUKA PICK & PLACE***
 
-This repo consists of the implementation of DQN, Dueling DQN and PPO algorithms for picking up only a green block by a KUKA robot in a PyBullet environment
+This repo consists of the implementation of DQN, Dueling DQN and PPO algorithms for picking up green blocks by a KUKA robot in a PyBullet environment and OpenAI gym.
 
 https://github.com/Shyam-pi/RL-for-KUKA-pick-and-place/assets/57116285/0add6c1c-2427-49ae-9a03-8cd9e0f665ee
 
