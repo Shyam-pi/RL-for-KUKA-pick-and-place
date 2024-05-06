@@ -1,17 +1,37 @@
+***REINFORCEMENT LEARNING BASED KUKA PICK & PLACE***
+
+This repo consists of the implementation of DQN, Dueling DQN and PPO algorithms for picking up green blocks by a KUKA robot in a PyBullet environment and OpenAI gym.
+
+https://github.com/Shyam-pi/RL-for-KUKA-pick-and-place/assets/57116285/0add6c1c-2427-49ae-9a03-8cd9e0f665ee
+
+**Dependency Installation**
+
+Install the necessary requirements by using the requirements.txt with the following command:
+
+```conda create --name <env> --file requirements.txt```
+
+where <env> is your conda environment's name of choice
+
+
 **Steps to run:**
 
-Navigate to the submission folder and use the following command to run:
+Once you are in the root folder, follow the following steps according to your choice
 
-"python kuka_dueling_dqn.py"
+To run DQN algorithm training:
 
-**Algorithm:**
+```python kuka_dueling_dqn.py```
 
-The script uses an algorithm very similar to dueling DQN with minor tweaks, the implementation of which is closely inspired from : https://github.com/dxyang/DQN_pytorch
 
-**Problems:** 
+To run Dueling DQN algorithm training:
 
-Couldn't find a working way to set this up on my local PC to have a GUI. Couldn't record a proper video when running on a headless display over the cluster.
+```python kuka_dueling_dqn.py```
 
-**Time complexity:**
 
-Picking up only the green blocks ended up being a challenging problem for the RL model. It takes around 4 hrs to complete 6000 episodes on an RTX A5000 GPU, and even then the best mean reward only climbed up to 35.0. Couldn't run it further since I couldn't avail GPU resources from the cluster for longer. 
+To run PPO algorithm training:
+
+```python kuka_ppo.py```
+
+
+**Note : Time complexity:**
+
+Picking up only the green blocks ended up being a challenging problem for the RL model. It takes around 4 hrs to complete 6000 episodes of the DQN algorithm on an RTX A5000 GPU (majorly bottlenecked by the environment resetting)
