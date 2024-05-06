@@ -8,9 +8,7 @@ This repo consists of the implementation of DQN, Dueling DQN and PPO algorithms 
 
 Install the necessary requirements by using the requirements.txt with the following command:
 
-''' 
-conda create --name <env> --file requirements.txt
-'''
+```conda create --name <env> --file requirements.txt```
 
 where <env> is your conda environment's name of choice
 
@@ -21,17 +19,17 @@ Once you are in the root folder, follow the following steps according to your ch
 
 To run DQN algorithm training:
 
-'''python kuka_dueling_dqn.py'''
+```python kuka_dueling_dqn.py```
 
 
 To run Dueling DQN algorithm training:
 
-'''python kuka_dueling_dqn.py'''
+```python kuka_dueling_dqn.py```
 
 
 To run PPO algorithm training:
 
-'''python kuka_ppo.py'''
+```python kuka_ppo.py```
 
 
 **Note : Time complexity:**
