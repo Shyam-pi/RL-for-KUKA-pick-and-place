@@ -17,7 +17,7 @@ where <env> is your conda environment's name of choice
 
 **Steps to run:**
 
-Once you are in the root folder, follow the following steps according to your choice
+Once you are in the root folder, follow the following steps in the terminal with the conda environment as the base, according to your choice :
 
 To run DQN algorithm training:
 
